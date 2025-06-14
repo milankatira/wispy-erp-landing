@@ -10,7 +10,7 @@ import Footer from "@/components/footer"
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <Navbar />
       <HeroSection />
       <CloudSolutionsSection />

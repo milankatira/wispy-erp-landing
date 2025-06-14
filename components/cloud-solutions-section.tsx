@@ -28,7 +28,7 @@ export default function CloudSolutionsSection() {
   ]
 
   return (
-    <section id="solutions" className="py-20 bg-white">
+    <section id="solutions" className="py-20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
@@ -54,7 +54,7 @@ export default function CloudSolutionsSection() {
           {/* Right Content - Image */}
           <div className="relative">
             <Image
-              src="/placeholder.svg?height=500&width=600"
+              src="/placeholder_1.png?height=500&width=600"
               alt="Cloud ERP Solutions"
               width={600}
               height={500}

@@ -12,24 +12,19 @@ export default function CloudERPSection() {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section className="py-20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content - Image */}
-          <div className="relative order-2 lg:order-1">
+          <div className="relative">
             <Image
-              src="/placeholder.svg?height=500&width=600"
-              alt="Cloud ERP Analytics"
-              width={600}
+              src="/placeholder_2.png?height=500&width=616"
+              alt="Cloud ERP Solutions"
+              width={616}
               height={500}
               className="rounded-2xl shadow-2xl"
               loading="lazy"
             />
-            {/* Overlay Stats */}
-            <div className="absolute top-8 left-8 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg border border-orange-100">
-              <div className="text-3xl font-bold text-primary">500+</div>
-              <div className="text-sm text-gray-600">Successful Implementations</div>
-            </div>
           </div>
 
           {/* Right Content */}

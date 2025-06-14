@@ -28,7 +28,7 @@ export default function ServicesSection() {
   ]
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
@@ -62,7 +62,7 @@ export default function ServicesSection() {
           {/* Right Content - Image */}
           <div className="relative">
             <Image
-              src="/placeholder.svg?height=600&width=600"
+              src="/placeholder.png?height=600&width=600"
               alt="ERP Services"
               width={600}
               height={600}

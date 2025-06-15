@@ -1,6 +1,8 @@
+'use client'
+
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Play } from "lucide-react"
+import { ArrowRight, Play, Calculator, BookOpen } from "lucide-react" // Import new icons
 import HeroVideoDialog from "./magicui/hero-video-dialog"
 
 export default function HeroSection() {
@@ -19,17 +21,21 @@ export default function HeroSection() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4">
+
               <Button
                 size="lg"
-                className=" hover:opacity-90 text-white px-8 py-3 shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                Get Started
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <Calculator className="mr-2 h-5 w-5" />
+                Pricing Calculator
               </Button>
-              <Button size="lg" variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-3">
-                <Play className="mr-2 h-5 w-5" />
-                Watch Demo
+
+              <Button
+                size="lg"
+                variant="outline"
+              >
+                <BookOpen className="mr-2 h-5 w-5" />
+                Pricing Guide
               </Button>
             </div>
           </div>

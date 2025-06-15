@@ -1,10 +1,28 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
+import { Sen } from 'next/font/google';
+
+const sen = Sen({
+  subsets: ['latin'], // Specify the subsets you need for optimization
+  weight: ['400', '700'], // Specify the weights you plan to use
+  variable: '--font-sen', // Optional: Define a CSS variable for easier use in Tailwind/CSS
+});
+
+const favicon = "/images/wispy-logo.png"
+
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Wispy Cloud Solutions',
+  description: 'Streamline your business operations with our tailored ERP solutions. Discover how our cloud-based systems can drive efficiency and growth.',
+  icons: {
+    icon: favicon,
+    shortcut: favicon,
+    apple: favicon,
+    other: {
+      rel: 'mask-icon',
+      url: favicon,
+    },
+  },
 }
 
 export default function RootLayout({
@@ -14,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${sen.className}`}>{children}</body>
     </html>
   )
 }

@@ -22,7 +22,7 @@ export default function Navbar() {
                 width={40}
                 height={40}
                 priority
-                className="w-10 h-10"
+                className="w-10 h-auto"
               />
               <span className="text-2xl font-bold text-gray-900">Wispy</span>
             </Link>
@@ -73,7 +73,9 @@ export default function Navbar() {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-gray-700 hover:text-orange-600 p-2">
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+              className="text-gray-700 hover:text-orange-600 p-2">
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>

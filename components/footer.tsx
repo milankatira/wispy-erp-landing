@@ -2,8 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react"
-import { motion } from "framer-motion"
+import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Instagram } from "lucide-react"
 
 export default function Footer() {
   const footerSections = [
@@ -38,7 +37,8 @@ export default function Footer() {
       title: "Resources",
       links: [
         { name: "Documentation", href: "#" },
-        { name: "Case Studies", href: "#" },
+        { name: "Case Studies",
+        href: "#" },
         { name: "Blog", href: "#" },
         { name: "Support", href: "#" },
       ],
@@ -49,16 +49,11 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
+          <div
             className="lg:col-span-2 space-y-6"
           >
             <div className="flex items-center space-x-3">
-              <Image src="/images/wispy-logo.png" alt="Wispy Logo" width={40} height={40} />
-              <span className="text-2xl font-bold">Wispy</span>
+              <Image src="/images/wispy-logo-footer.png" alt="Wispy Logo" width={201} height={42} className="mix-blend-screen h-10 w-[201px]" />
             </div>
             <p className="text-gray-300 leading-relaxed">
               Your trusted ERP consultant for unified business solutions. We help organizations streamline operations
@@ -79,25 +74,24 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex space-x-4 pt-2">
-              <Link href="#" className="text-gray-400 hover:text-orange-400 transition-colors">
+              <Link href="#" className="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Visit our LinkedIn profile">
                 <Linkedin className="h-6 w-6" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <Link href="#" className="text-gray-400 hover:text-gray-200 transition-colors" aria-label="Visit our Twitter profile">
                 <Twitter className="h-6 w-6" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-emerald-400 transition-colors">
+              <Link href="#" className="text-gray-400 hover:text-blue-400 transition-colors" aria-label="Visit our Facebook profile">
                 <Facebook className="h-6 w-6" />
               </Link>
+              <Link href="#" className="text-gray-400 hover:text-pink-400 transition-colors" aria-label="Visit our Instagram profile">
+                <Instagram className="h-6 w-6" />
+              </Link>
             </div>
-          </motion.div>
+          </div>
 
           {footerSections.map((section, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 * index, duration: 0.4 }}
-              viewport={{ once: true }}
               className="space-y-4"
             >
               <h3 className="text-lg font-semibold text-white">{section.title}</h3>
@@ -110,7 +104,7 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-            </motion.div>
+            </div>
           ))}
         </div>
 

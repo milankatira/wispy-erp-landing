@@ -53,7 +53,7 @@ export default function Footer() {
             className="lg:col-span-2 space-y-6"
           >
             <div className="flex items-center space-x-3">
-              <Image src="/images/wispy-logo-footer.png" alt="Wispy Logo" width={201} height={42} className="mix-blend-screen h-10 w-[201px]" />
+              <Image src="https://res.cloudinary.com/da5rta12e/image/upload/f_auto,q_auto/wispy-logo-footer_p6ylvm" alt="Wispy Logo" width={201} height={42} className="mix-blend-screen h-10 w-[201px]" />
             </div>
             <p className="text-gray-300 leading-relaxed">
               Your trusted ERP consultant for unified business solutions. We help organizations streamline operations

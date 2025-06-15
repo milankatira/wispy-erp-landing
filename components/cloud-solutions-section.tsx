@@ -54,7 +54,7 @@ export default function CloudSolutionsSection() {
           {/* Right Content - Image */}
           <div className="relative">
             <Image
-              src="/placeholder_1.png?height=500&width=600"
+              src="https://res.cloudinary.com/da5rta12e/image/upload/f_auto,q_auto/placeholder_1_zmrt3y"
               alt="Cloud ERP Solutions"
               width={600}
               height={500}

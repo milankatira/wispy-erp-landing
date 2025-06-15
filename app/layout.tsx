@@ -9,7 +9,7 @@ const sen = Sen({
   variable: '--font-sen', // Optional: Define a CSS variable for easier use in Tailwind/CSS
 });
 
-const favicon = "/images/wispy-logo.png"
+const favicon = "https://res.cloudinary.com/da5rta12e/image/upload/f_auto,q_auto/wispy-logo_vfdkv2"
 
 export const metadata: Metadata = {
   title: 'Wispy Cloud Solutions',

@@ -62,7 +62,7 @@ export default function ServicesSection() {
           {/* Right Content - Image */}
           <div className="relative">
             <Image
-              src="/placeholder.png?height=600&width=600"
+              src="https://res.cloudinary.com/da5rta12e/image/upload/f_auto,q_auto/placeholder_ecvweq"
               alt="ERP Services"
               width={600}
               height={600}

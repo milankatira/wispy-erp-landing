@@ -1,9 +1,10 @@
 "use client"
-import Navbar from "@/components/navbar";
+
 import HeroSection from "@/components/hero-section";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 import CloudSolutionsSection from "@/components/cloud-solutions-section";
+import { WispyNavbar } from "@/components/navbar";
 const CloudERPSection = dynamic(() => import("@/components/cloud-erp-section"), { ssr: false });
 const PartnersSection = dynamic(() => import("@/components/partners-section"), { ssr: false });
 const ApproachSection = dynamic(() => import("@/components/approach-section"), { ssr: false });
@@ -14,7 +15,7 @@ const Footer = dynamic(() => import("@/components/footer"), { ssr: false });
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
-      <Navbar />
+      <WispyNavbar />
       <HeroSection />
       <CloudSolutionsSection />
       <Suspense fallback={<></>}>

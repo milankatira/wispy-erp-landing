@@ -28,7 +28,7 @@ export default function ScaleSection() {
         className="absolute inset-0 bg-primary"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 0.5 }}
       ></motion.div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

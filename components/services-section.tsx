@@ -127,7 +127,7 @@ export default function ServicesSection() {
             </div>
           </div>
         </div>
-      <div className="w-full mx-auto px-4 py-5">
+      <div className="w-full mx-auto px-4 py-5 hidden sm:flex">
         <StickyScroll content={services} />
       </div>
     </section>

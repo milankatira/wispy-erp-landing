@@ -4,7 +4,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play, Calculator, BookOpen } from "lucide-react" // Import new icons
 import HeroVideoDialog from "./magicui/hero-video-dialog"
-
+import { motion } from 'framer-motion'
 export default function HeroSection() {
   return (
     <section className="pt-40 pb-16 ">
@@ -49,14 +49,26 @@ export default function HeroSection() {
                 thumbnailSrc="https://startup-template-sage.vercel.app/hero-light.png"
                 thumbnailAlt="Hero Video"
               />
-              <div className="absolute -top-4 -right-4 bg-white rounded-lg shadow-lg p-4 border border-orange-100">
+
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8, y: -10 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ delay: 0, type: "spring", bounce: 0.2 }}
+                className="absolute -top-4 -right-4 bg-white rounded-lg shadow-lg p-4 border border-orange-100"
+              >
                 <div className="text-2xl font-bold text-primary">99.9%</div>
                 <div className="text-sm text-gray-600">Uptime</div>
-              </div>
-              <div className="absolute -bottom-4 -left-4 bg-white rounded-lg shadow-lg p-4 border border-teal-100">
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8, y: -10 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ delay: 0, type: "spring", bounce: 0.2 }}
+                className="absolute -bottom-4 -left-4 bg-white rounded-lg shadow-lg p-4 border border-teal-100"
+              >
                 <div className="text-2xl font-bold text-green-600">24/7</div>
                 <div className="text-sm text-gray-600">Support</div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
